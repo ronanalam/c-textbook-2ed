@@ -10,12 +10,12 @@ int main() {
 
 	f = lower;
 	printf("---------------------\n");
-	printf("Fahrenheit -> Celsius\n");
+	printf("Celsius -> Fahrenheit\n");
 	printf("---------------------\n");
 
-	while(f<=upper) {
-		c = (5.0/9.0) * (f-32.0);
-		printf("%3.0f %17.2f\n", f, c);
-		f += step;
+	while(c<=upper) {
+		f = c*(9.0/5.0) + 32.0;
+		printf("%3.0f %17.1f\n", c, f);
+		c += step;
 	}
 }
